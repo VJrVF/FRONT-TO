@@ -7,7 +7,7 @@ const shoppingCart = localStorage.getItem('shoppingCart');
 // Disable the button until we have Stripe set up on the page
 document.querySelector("button").disabled = true;
 
-fetch("http://localhost:3000/create-payment-intent", {
+fetch("https://backend-to-carrito.herokuapp.com/create-payment-intent", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
@@ -122,7 +122,7 @@ function guardarOrderEnBD() {
     items: JSON.parse(items)
   };
 
-  fetch("http://localhost:3000/order", {
+  fetch("https://backend-to-carrito.herokuapp.com/order", {
 
     method : 'POST',
     headers : {

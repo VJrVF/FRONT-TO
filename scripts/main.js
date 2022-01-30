@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:3000/';
+const serverUrl = 'https://backend-to-carrito.herokuapp.com/';
 const itemsPath = 'items/';
 const imagesPath = 'img/';
 
