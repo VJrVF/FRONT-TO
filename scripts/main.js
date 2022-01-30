@@ -1,4 +1,4 @@
-const serverUrl = 'https://backend-tiendita.herokuapp.com/';
+const serverUrl = 'https://desolate-inlet-36152.herokuapp.com/';
 const itemsPath = 'items/';
 const imagesPath = 'img/';
 

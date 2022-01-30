@@ -7,7 +7,7 @@ const shoppingCart = localStorage.getItem('shoppingCart');
 // Disable the button until we have Stripe set up on the page
 document.querySelector("button").disabled = true;
 
-fetch("https://backend-tiendita.herokuapp.com/create-payment-intent", {
+fetch("https://desolate-inlet-36152.herokuapp.com/create-payment-intent", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
@@ -122,7 +122,7 @@ function guardarOrderEnBD() {
     items: JSON.parse(items)
   };
 
-  fetch("https://backend-tiendita.herokuapp.com/order", {
+  fetch("https://desolate-inlet-36152.herokuapp.com/order", {
 
     method : 'POST',
     headers : {
