@@ -9,7 +9,7 @@ const items = document.querySelector('.items');
 function getData() {
     fetch(`${serverUrl}${itemsPath}`)
        .then((res) => res.json())
-       .then((data) => printData(data));
+       //.then((data) => printData(data));
 }
 
 function printData(data) {
