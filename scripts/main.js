@@ -1,4 +1,4 @@
-const serverUrl = 'https://backend-to-carrito.herokuapp.com/';
+const serverUrl = 'https://backend-tiendita.herokuapp.com/';
 const itemsPath = 'items/';
 const imagesPath = 'img/';
 
@@ -9,7 +9,7 @@ const items = document.querySelector('.items');
 function getData() {
     fetch(`${serverUrl}${itemsPath}`)
        .then((res) => res.json())
-       //.then((data) => printData(data));
+       .then((data) => printData(data));
 }
 
 function printData(data) {
